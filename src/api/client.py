@@ -14,4 +14,4 @@ class Client:
                     params=params)
             return response
         except Exception as e:
-            raise e
+            print(f'An error has occurred: {e}')
