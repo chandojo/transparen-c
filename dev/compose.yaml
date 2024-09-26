@@ -1,0 +1,22 @@
+name: tranparen-c
+
+services:
+  pipes:
+    build: ../
+    image: transparen-c/pipes
+    develop:
+      watch:
+        - action: sync
+          path: ../src
+          target: /transparen-c/src
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
+    driver: local 
