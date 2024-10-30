@@ -1,4 +1,4 @@
-from client import Client
+from api.client import Client
 import unittest
 
 

@@ -10,7 +10,7 @@ services:
       watch:
         - action: sync
           path: ../src
-          target: /transparen-c/src
+          target: /transparen-c
   postgres:
     image: postgres
     restart: always
