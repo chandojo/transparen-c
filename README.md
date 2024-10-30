@@ -6,6 +6,12 @@ Data used have a 'Public Domain' license and comes from Washington State's [Publ
 
 
 ## Local Development
+To start developing, you will need to install [Docker].
+
+- Run Docker desktop 
+  - Mac: `open -a Docker` 
+  - Windows: `start Docker`
+  - Linux: `xdg-open Docker`
 - Navigate to the [dev] directory
 - Run `docker compose watch`
 
@@ -15,3 +21,4 @@ Changes in [src] directory will be updated in the apps container
 [Public Disclosure Commission]: https://pdc.wa.gov/
 [dev]: ./dev
 [src]: ./src
+[Docker]: https://docs.docker.com/engine/install/
