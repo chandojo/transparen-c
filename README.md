@@ -31,8 +31,13 @@ As of right now, you have to open the Docker container shell to run unit tests. 
 
 Below is an example of how to do this
 ```
+# Access the container's shell
 $ docker exec -it transparen-c-pipes-1 bash
+
+# Once you are in the shell, navigate to the directory with the tests you want run
 transparen-c-pipes-1 $ cd tests/api
+
+# Run the tests
 transparen-c-pipes-1 $ python -m unittest
 ```
 
