@@ -24,6 +24,17 @@ To start developing, there are a few things you need to do to set up:
 ### Making updates
 Changes in [src] directory will automatically be updated in the apps container
 
+### Running unit tests
+Testing is hard :(
+
+As of right now, you have to open the Docker container shell to run unit tests. It is on my to-do list to optimize testing.
+
+Below is an example of how to do this
+```
+$ docker exec -it transparen-c-pipes-1 bash
+transparen-c-pipes-1 $ cd tests/api
+transparen-c-pipes-1 $ python -m unittest
+```
 
 [Contributions to Candidates and Political Committees]: https://dev.socrata.com/foundry/data.wa.gov/kv7h-kjye
 [Public Disclosure Commission]: https://pdc.wa.gov/
