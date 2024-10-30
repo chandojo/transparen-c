@@ -4,6 +4,8 @@ services:
   pipes:
     build: ../
     image: transparen-c/pipes
+    environment:
+      - app_token=${app_token}
     develop:
       watch:
         - action: sync
