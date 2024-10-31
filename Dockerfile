@@ -16,11 +16,12 @@ RUN groupadd --gid $USER_GID $USERNAME \
 
 WORKDIR /transparen-c
 
-COPY requirements.txt requirements.txt 
+COPY requirements.txt requirements.txt
+COPY src ./
 
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -e .
 
-COPY src ./src
 
 USER $USERNAME
 
